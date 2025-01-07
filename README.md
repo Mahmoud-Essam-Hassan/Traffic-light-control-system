@@ -78,7 +78,7 @@ pedastrain crossing requests while protecting the system against any abusive beh
 - PED_A_PB -> PIN0
 - PED_B_PB -> PIN2
 
-![alt text](image.png)
+![alt text](Hardware_Diagram-1.png)
 
 ## Getting Started
 
