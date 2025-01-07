@@ -49,7 +49,7 @@ pedastrain crossing requests while protecting the system against any abusive beh
 - The system will go to state 2 then state 3 for Push button B request
 - Then the system will continue to operate normally.
 
-![alt image](Traffic_Light_Task-1.jpg)
+![alt text](Traffic_Light_Task-1.jpg)
 
 ## Components
 
