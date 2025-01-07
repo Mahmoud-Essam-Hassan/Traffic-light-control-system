@@ -12,33 +12,6 @@ pedastrain crossing requests while protecting the system against any abusive beh
 - **Pedestrian Pushbutton :** Pedestrians can press a button to request crossing.
 - **Pedestrian Override Functionality:** System is protected against abusive behaviour (Many pedastrain crossing requests in a short time).
 
-## Components
-
-- **ARM Cortex-M STM32F401CC Microcontroller:** Core processor handling all logic and control operations.
-- **10\*LED:** LED Lights for each direction (Green, Yellow, and Red for Cars) (Green and Red for pedestrians).
-- **Pushbuttons:** Pushbuttons for Pedestrian Requests.
-- **Power Supply:** Supplies power to the STM32 microcontroller and LEDs .
-
-## Hardware Connections
-
-- **LED Connections:**
-- PORTA
-- CAR_A_RED -> PIN0
-- CAR_A_YELLOW -> PIN1
-- CAR_A_GREEN -> PIN2
-- CAR_B_RED -> PIN3
-- CAR_B_YELLOW -> PIN4
-- CAR_B_GREEN -> PIN5
-- PED_A_RED -> PIN6
-- PED_A_GREEN -> PIN7
-- PED_B_RED -> PIN8
-- PED_B_GREEN -> PIN9
-
-- **PUSH Button Connections:**
-- PORTB
-- PED_A_PB -> PIN0
-- PED_B_PB -> PIN2
-
 ## How It Works
 
 1. **All traffic and pedestrian lights are set to their initial states for 30 sec:**
@@ -75,6 +48,37 @@ pedastrain crossing requests while protecting the system against any abusive beh
 - The system will go to state 4 then state 1 for Push button A request
 - The system will go to state 2 then state 3 for Push button B request
 - Then the system will continue to operate normally.
+
+![alt text](Traffic_Light_Task-1.jpg)
+
+## Components
+
+- **ARM Cortex-M STM32F401CC Microcontroller:** Core processor handling all logic and control operations.
+- **10\*LED:** LED Lights for each direction (Green, Yellow, and Red for Cars) (Green and Red for pedestrians).
+- **Pushbuttons:** Pushbuttons for Pedestrian Requests.
+- **Power Supply:** Supplies power to the STM32 microcontroller and LEDs .
+
+## Hardware Connections
+
+- **LED Connections:**
+- PORTA
+- CAR_A_RED -> PIN0
+- CAR_A_YELLOW -> PIN1
+- CAR_A_GREEN -> PIN2
+- CAR_B_RED -> PIN3
+- CAR_B_YELLOW -> PIN4
+- CAR_B_GREEN -> PIN5
+- PED_A_RED -> PIN6
+- PED_A_GREEN -> PIN7
+- PED_B_RED -> PIN8
+- PED_B_GREEN -> PIN9
+
+- **PUSH Button Connections:**
+- PORTB
+- PED_A_PB -> PIN0
+- PED_B_PB -> PIN2
+
+![alt text](image.png)
 
 ## Getting Started
 
